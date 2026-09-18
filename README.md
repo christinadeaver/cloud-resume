@@ -21,3 +21,6 @@ npx serve .
 
 ## Why this project
 Shows clean frontend delivery and readiness for simple cloud hosting workflows.
+
+<!-- achievement pr 1 -->
+
