@@ -1,0 +1,154 @@
+:root {
+  --ink: #10231c;
+  --muted: #4d655b;
+  --paper: #f3f7f4;
+  --accent: #0f7a4e;
+  --accent-2: #1f6feb;
+  --line: rgba(16, 35, 28, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--ink);
+  background: #0b1511;
+}
+
+.bg {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(31, 111, 235, 0.28), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(15, 122, 78, 0.35), transparent 35%),
+    linear-gradient(160deg, #07110e, #12241c 55%, #0a1612);
+  z-index: -1;
+}
+
+.sheet {
+  width: min(880px, calc(100% - 2rem));
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: color-mix(in srgb, var(--paper) 92%, white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+  animation: rise 700ms ease both;
+}
+
+.brand {
+  margin: 0 0 0.4rem;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0 0 0.6rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.05;
+}
+
+.lede {
+  max-width: 38rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.cta-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.4rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+section {
+  margin-top: 2rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--line);
+}
+
+.chips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.chips li {
+  padding: 0.4rem 0.7rem;
+  background: rgba(15, 122, 78, 0.1);
+  border: 1px solid rgba(15, 122, 78, 0.2);
+  font-size: 0.92rem;
+}
+
+.item + .item {
+  margin-top: 1rem;
+}
+
+.item p,
+section > p,
+footer p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .sheet {
+    margin: 1rem auto;
+    padding: 1.4rem;
+  }
+}
