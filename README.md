@@ -1,83 +1,22 @@
-# Cloud Resume
+# Cloud Resume — Christina Deaver
 
-Static cloud resume site for **senior-ara1206**.
+Static resume site sourced from `christina_resume.docx`.
 
-## Stack
-- HTML
-- CSS
-- JavaScript
+## Profile
+- **Name:** Christina Deaver
+- **Role:** Senior Software Engineer | AI Engineer
+- **Location:** Murray, Utah, United States
+- **Email:** christinadeaver6@gmail.com
+- **Phone:** +1 385-248-1416
+- **LinkedIn:** https://linkedin.com/in/christinadeaver/
+- **GitHub:** https://github.com/senior-ara1206
+
+## Live
+https://senior-ara1206.github.io/cloud-resume/
 
 ## Run locally
-Open `index.html` in a browser, or serve the folder:
+Open `index.html` or:
 
 ```bash
 npx serve .
 ```
-
-## Deploy options
-1. GitHub Pages
-2. AWS S3 static website hosting
-3. AWS S3 + CloudFront
-
-## Why this project
-Shows clean frontend delivery and readiness for simple cloud hosting workflows.
-
-<!-- achievement pr 1 -->
-
-
-<!-- achievement pr 2 -->
-
-
-<!-- pair a 20260918-022418 -->
-
-
-<!-- pair b 20260918-022730 -->
-
-
-<!-- yolo merge -->
-
-
-<!-- badge batch 3 -->
-
-
-<!-- badge batch 4 -->
-
-
-<!-- badge batch 1 -->
-
-
-<!-- badge batch 6 -->
-
-
-<!-- badge batch 3 -->
-
-
-<!-- badge batch 8 -->
-
-
-<!-- badge batch 4 -->
-
-
-<!-- badge batch 9 -->
-
-
-<!-- badge batch 6 -->
-
-
-<!-- badge batch 11 -->
-
-
-<!-- badge batch 8 -->
-
-
-<!-- badge batch 9 -->
-
-
-<!-- badge batch 10 -->
-
-
-<!-- badge batch 11 -->
-
-
-<!-- badge batch 12 -->
-
